@@ -1,0 +1,151 @@
+{
+    "name": "PlayerControls",
+    "maps": [
+        {
+            "name": "Player",
+            "id": "9790539b-a983-42c4-93f9-4431c3b26faf",
+            "actions": [
+                {
+                    "name": "HorizontalMoveAction",
+                    "type": "Value",
+                    "id": "f812d7fa-5a73-4223-8e37-31bb4abfa4ae",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "JumpAction",
+                    "type": "Button",
+                    "id": "39af666b-ee0b-42ad-94fc-635cf464353a",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "DashAction",
+                    "type": "Button",
+                    "id": "684678b5-44f2-4715-a0d2-af610342763e",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "HorizontalMoveAxis",
+                    "id": "aadc9448-0fe8-45a4-8410-e781bb9f4237",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "HorizontalMoveAction",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "82bb21f9-eecd-4c48-a4a8-8c0b17885cc5",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "HorizontalMoveAction",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "3907b54b-0060-42c9-bb4f-06be85e7c973",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "HorizontalMoveAction",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "HorizontalMoveAxisController",
+                    "id": "80944b8e-d932-4b39-9f78-da6c116e1d0f",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "HorizontalMoveAction",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "7e3765d5-dc42-45d1-b206-840cf8f5ce1c",
+                    "path": "<HID::Logitech Logitech Cordless RumblePad 2>/stick/left",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "HorizontalMoveAction",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "e3c0b4ab-0d19-4f35-b87a-4aba6fa54c75",
+                    "path": "<HID::Logitech Logitech Cordless RumblePad 2>/stick/right",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "HorizontalMoveAction",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "49aba13f-c91a-4779-a609-e3040b6b910a",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "JumpAction",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ad4a19d8-27fa-4a46-87da-e0ccb7c139f6",
+                    "path": "<HID::Logitech Logitech Cordless RumblePad 2>/button2",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "JumpAction",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4f2ae78e-9193-42d3-8a6c-fd885927cb5d",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DashAction",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "07284b77-5427-48c0-8ae0-4495c308741b",
+                    "path": "<HID::Logitech Logitech Cordless RumblePad 2>/button8",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DashAction",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
